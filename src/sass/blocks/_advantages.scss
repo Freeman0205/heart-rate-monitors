@@ -21,7 +21,11 @@
         align-items: center;
         max-width: 231px;
     }
-    
+    &__title {
+        color: #0d0d0d;
+        font-size: 18px;
+        font-weight: 700;
+    }
     &__text {
         margin-top: 25px;
         color: #0d0d0d;
