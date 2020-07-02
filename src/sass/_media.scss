@@ -3,11 +3,16 @@
         min-width: 100%;
         padding: 21px 44px 93px 44px;
         
+    }
+    .consultation {
+        
+        .container {
+            padding: 0 35px;
+        }
     }   
 }
 @media (max-width:991px) {
     .promo {
-
         background: url(../img/bg1.jpg) 30% center no-repeat;
         min-height: 100%;
         padding-bottom: 12px;
@@ -31,16 +36,19 @@
     }
     
     .advantages {
-        padding: 14px 5px;
+        padding: 14px 22px 32px 22px;
         &__wrapper {
             margin-top: 5px;
         }
     }
+    
+    
     .button {
         &_main {
             margin-top: 25px;
         }
     }
+    
 }
 @media (max-width:767px) {
     .promo {
@@ -66,6 +74,7 @@
             justify-content: space-around;
         }
     }
+    
     .header {
         &__phone {
             font-size: 16px;
@@ -88,6 +97,7 @@
         }
     }
     .advantages {
+        
         &__title {
             font-size: 16px;
         }
@@ -105,10 +115,10 @@
             margin: 5px 0 5px 0;
         }
     }
-}
     .title {
         font-size: 25px;
     }
+}
 @media (max-width:575px) {
     .promo {
         background: url(../img/bg1.jpg) 25% center/cover no-repeat;
@@ -160,6 +170,18 @@
         &__phone {
             font-size: 22px;
         }
+    }
+    .consultation {
+        
+        padding: 10px;
+        &__descr {
+            font-size: 15px;
+            margin-top: 0;
+        }
+    }
+    .title {
+        font-size: 16px;
+        text-align: center;
     }
     .button {
         display: block;
