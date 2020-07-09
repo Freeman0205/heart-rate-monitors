@@ -9,6 +9,11 @@
         .container {
             padding: 0 35px;
         }
+    }
+    .feedback {
+        hr {
+            width: 100%;
+        }
     }   
 }
 @media (max-width:991px) {
@@ -40,24 +45,32 @@
         &__wrapper {
             margin-top: 5px;
         }
-    }
-    .consultation {
-        padding: 20px;
-    &__descr {
-        margin-top: 5px;
+        &__icons {
+            width: 30%;
         }
     }
+
+    .consultation {
+        padding: 20px;
+        &__descr {
+            margin-top: 5px;
+            }
+    }
+
     .carousel {
         padding: 10px;
         
-    .carousel__inner {
-        width: 565px;
-        }
-        div {
+        &__inner {
+            width: 565px;
+            div {
             width: 100%;
-        }
-        .slick-slide img {
-            width: 100%;
+            }
+        }        
+        
+        .slick-slide {
+            img {
+                width: 100%;
+            }
         }
         .slick-dots {
             text-align: center;
@@ -86,22 +99,41 @@
                 background: rgba($color: #FF0800, $alpha: 1.0);
                 color: #ffffff;
             }
+        
         }
+    
+    }
+
     .catalog {
         .catalog-item {
             width: 347px;
         }
     }
-        
-    .button {
-        &_main {
-            margin-top: 25px;
+   
+    .feedback {
+        .container {
+            padding: 0 40px 71px 40px;
+        }
+        &__item {
+            margin-top: 11px;
+        }
+        &__title {
+            font-size: 17px;
+            text-align: left;
+        }
+        &__subtitle {
+            font-size: 13px;
+            text-align: left;
+        }
+        &__descr {
+            font-size: 16px;
+            text-align: left;
         }
     }
-     
-    
 }
+
 @media (max-width:767px) {
+   
     .promo {
         padding: 20px 25px 11px 26px;
         &__wrapper {
@@ -140,6 +172,7 @@
             margin: 0 14px 0 0;
         }
     }
+    
     .button {
         &_main {
             display: block;
@@ -147,13 +180,18 @@
             margin-top: 25px;
         }
     }
+
     .advantages {
         
         &__title {
-            font-size: 16px;
+            width: 250px;
+            font-size: 19px;
+            text-align: center;
         }
         &__text {
             margin-top: 5px;
+            width: 450px;
+            font-size: 16px;
         }
         &__wrapper {
             width: 100%;
@@ -166,18 +204,42 @@
             margin: 5px 0 5px 0;
         }
     }
-    
-    .carousel {
-        .carousel__inner {
-            width: 445px;
+    .consultation {
+        min-height: 390px;
+        .container {
+            padding: 0 5px;
         }
-        div {
-            width: 100%;
+        &__descr {
+            font-size: 16px;
         }
-        .slick-slide img {
-            width: 100%;
+        .title_left {
+            font-size: 22px;
+        }
+        .feed-form {
+            input {
+                height: 38px;
+                margin-bottom: 9px;
+            }
         }
     }
+    
+    .carousel {
+        &__inner {
+            width: 445px;
+            div {
+                width: 100%;
+            }
+        }
+        .slick-slide {
+            img {
+                width: 100%;
+            }
+        }
+        .slick-dots {
+            padding: 0;
+        }
+    }
+
     .catalog {
         padding-bottom: 10px;
         
@@ -202,6 +264,7 @@
         }
 
     }
+
     .feedback {
         .container {
             padding: 0 20px;
@@ -216,10 +279,12 @@
         &__wrapper {
             margin-top: 15px;
         }
+        &__img {
+            width: 140px;
+            height: 140px;
+        }
     }
-    .title {
-        font-size: 25px;
-    }
+
 }
 
 @media (max-width: 575px) {
@@ -249,42 +314,57 @@
             margin-top: 5px;
             font-size: 11px;
         }
-        .header {
-            flex-direction: column;
-            &__logo {
-                width: 185px;
-            }
-            &__official {
-                margin: 18px 0 0 0;
-                align-items: center;
-                font-size: 11px;
-            }
-            &__phone {
-                margin-top: 20px;
-                font-size: 22px;
+    }
+
+    .header {
+        flex-direction: column;
+        &__logo {
+            width: 185px;
+            img {
+                display: block;
+                margin: 0 auto;
             }
         }
-    }
-        .button {
-            display: block;
-            margin: 0 auto;
-            &_main {
-                width: 240px;
-                height: 30px;
-                font-size: 12px;
-                margin-top: 15px;
-            }
+        &__official {
+            margin: 18px 0 0 0;
+            align-items: center;
+            font-size: 11px;
+        }
+        &__phone {
+            margin-top: 20px;
+            font-size: 22px;
         }
     }
+    
+    .button {
+        display: block;
+        margin: 0 auto;
+        &_main {
+            width: 240px;
+            height: 30px;
+            font-size: 12px;
+            margin-top: 15px;
+        }
+    }
+    
     .advantages {
-        .title {
-            font-size: 21px;
-        }
         &__icons {
             min-width: 100%;
             margin: 0;
         }
+        &__text {
+            width: 100%;
+            font-size: 13px;
+        }
+        &__title {
+            font-size: 15px;
+        }
+
+        .title {
+            font-size: 18px;
+        }
     }
+
     .consultation {
         min-height: 350px;
         padding: 10px 0 10px 0;
@@ -301,23 +381,25 @@
             font-size: 17px;
             text-align: center;
         }
-        .feed-form {
-            margin-top: 7px;
-            input {
-                height: 32px;
-                margin-bottom: 8px;
-                padding: 0 4px;
-                font-size: 12px;
-            }
-        }
-        .button_submit {
-            height: 39px;
-            font-size: 17px;
-            margin-top: 10px;
+    }
+
+    .feed-form {
+        margin-top: 7px;
+        input {
+            height: 32px;
+            margin-bottom: 8px;
+            padding: 0 4px;
+            font-size: 12px;
         }
     }
+    .button_submit {
+        height: 39px;
+        font-size: 17px;
+        margin-top: 10px;
+    }
+    
     .carousel {
-        .carousel__inner {
+        &__inner {
             width: 255px;
         }
         .slick-dots {
@@ -326,6 +408,7 @@
             }
         }
     }
+
     .catalog {
         .container {
             padding: 0 17px;
@@ -356,11 +439,11 @@
             font-size: 19px;
         }
     }
+
     .feedback {
         &__img {
             width: 140px;
             height: 140px;
-            
         }
         &__title {
             font-size: 15px;
@@ -376,12 +459,20 @@
             text-align: center;
 
         }
+        &__wrapper {
+            margin-left: 0;
+            padding-right: 0;
+        }
+        hr {
+            width: 100%;
+        }
 
-    }
         .title {
             font-size: 19px;            
         }
-} 
+
+    } 
+}
 
 
 
