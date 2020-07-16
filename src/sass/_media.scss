@@ -105,14 +105,16 @@
     }
 
     .catalog {
+        padding-bottom: 30px;
         .catalog-item {
             width: 347px;
         }
     }
    
     .feedback {
+        padding-bottom: 0;
         .container {
-            padding: 0 40px 71px 40px;
+            padding: 0 40px 20px 40px;
         }
         &__item {
             margin-top: 11px;
@@ -129,6 +131,26 @@
             font-size: 16px;
             text-align: left;
         }
+    }
+    .footer {
+        height: 450px;
+        &__info {
+            width: 388px;
+            height: 183px;
+            padding: 12px 14px 12px 12px;
+        }
+        &__social-item {
+            width: 30px;
+            height: 30px;
+            margin-right: 5px;
+            img {
+                height: 15px;
+            }
+        }
+        iframe {
+            height: 450px;
+        }
+
     }
 }
 
@@ -272,17 +294,59 @@
         &__item {
             flex-direction: column;
             margin-top: 15px;
+            justify-content: center;
+            align-items: center;
             &:nth-child(2) {
                 margin-top: 15px;
             }
         }
+        &__title {
+            text-align: center;
+        }
+        &__subtitle {
+            text-align: center;
+        }
+        &__descr {
+            text-align: center;
+        }
         &__wrapper {
-            margin-top: 15px;
+            margin: 15px 0 0 0;
+            padding-right: 0;
         }
         &__img {
             width: 140px;
             height: 140px;
+            margin-right: 0;
         }
+    }
+    .footer {
+        height: 400px;
+        &__info {
+            width: 260px;
+            height: 120px;
+            padding: 12px 14px 12px 12px;
+            right: 50%;
+            transform: translateX(5%);
+        }
+        &__addr {
+            font-size: 12px;
+            margin-bottom: 7px;
+        }
+        &__phone {
+            margin:15px 0 26px 0;
+        }
+        &__social-item {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+            img {
+                height: 10px;
+            }
+        }
+        iframe {
+            height: 400px;
+        }
+
     }
 
 }
@@ -441,9 +505,15 @@
     }
 
     .feedback {
+        &__item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         &__img {
             width: 140px;
             height: 140px;
+            margin-right: 0;
         }
         &__title {
             font-size: 15px;
@@ -471,6 +541,34 @@
             font-size: 19px;            
         }
 
+    }
+    .footer {
+        height: 100px;
+        &__info {
+            width: 100px;
+            height: 132px;
+            padding: 3px 3px;
+            position: absolute;
+            top: 200px;
+            left: -6px;
+
+            
+        }
+        &__addr {
+            font-size: 10px;
+            margin-bottom: 0;
+            line-height: 12px;
+        }
+        &__phone {
+            font-size: 16px;
+            margin: 10px 10px;
+        }
+        &__social-item {
+            width: 24px;
+            height: 24px;
+            margin-right: 4px;
+            margin: 0 5px;
+        }    
     } 
 }
 
