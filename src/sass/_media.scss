@@ -152,6 +152,12 @@
         }
 
     }
+    .modal {
+        width: 365px;
+        min-height: 300px;
+        background-color: #f2f2f2;
+        padding: 6px 25px 20px 33px;
+    }
 }
 
 @media (max-width:767px) {
@@ -348,6 +354,9 @@
         }
 
     }
+    .modal {
+        width: 329px;
+    }
 
 }
 
@@ -409,6 +418,7 @@
             font-size: 12px;
             margin-top: 15px;
         }
+        
     }
     
     .advantages {
@@ -455,11 +465,18 @@
             padding: 0 4px;
             font-size: 12px;
         }
+        
     }
     .button_submit {
         height: 39px;
         font-size: 17px;
         margin-top: 10px;
+        
+    }
+    .button_mobile {
+        height: 55px;
+        font-size: 14px;
+        margin-top: 0;
     }
     
     .carousel {
@@ -569,7 +586,17 @@
             margin-right: 4px;
             margin: 0 5px;
         }    
-    } 
+    }
+    .modal {
+        width: 273px;
+        &__subtitle {
+            font-size: 22px;
+        }
+        &_descr {
+            font-size: 16px;
+        }
+    }
+
 }
 
 
