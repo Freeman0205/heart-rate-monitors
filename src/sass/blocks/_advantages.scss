@@ -20,11 +20,18 @@
         flex-direction: column;
         align-items: center;
         max-width: 231px;
+        &_animated {
+            animation: heartbeat 1.5s ease infinite;
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
     }
     &__title {
         color: #0d0d0d;
         font-size: 18px;
         font-weight: 700;
+        margin-top: 27px;
     }
     &__text {
         margin-top: 25px;
