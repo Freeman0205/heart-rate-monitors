@@ -105,9 +105,18 @@
     }
 
     .catalog {
-        padding-bottom: 30px;
+        padding: 0 30px;
+        
         .catalog-item {
-            width: 347px;
+            width: 224px;
+            padding: 10px 5px 10px 5px;
+            &__descr {
+                margin-right: 20px;
+            }
+        }
+        .button_mini {
+            width: 100px;
+            height: 50px;
         }
     }
    
@@ -270,7 +279,11 @@
 
     .catalog {
         padding-bottom: 10px;
-        
+        .button_mini {
+            width: 120px;
+            height: 33px;
+            margin-bottom: 3px;
+        }
         .container {
             padding: 20px;
         }
@@ -284,8 +297,51 @@
         &__content {
             margin-top: 12px;
         }
+        .catalog-item {
+            width: 148px;
+            padding: 2px 2px 2px 4px;
+
+            &__list li {
+                font-size: 10px;
+                margin-bottom: 0px;
+            }
+            &__descr {
+                margin-right: 0px;
+                font-size: 11px;
+                margin-top: 3px;
+            }
+            &__link {
+                margin-top: 36px;
+                position: absolute;
+                margin-left: 25px;
+            }
+            &__price {
+                margin-bottom: 7px;
+            }
+            &__back {
+                bottom: -10px;
+            }
+                
+        }
         &-item {
             max-width: 50%;
+            min-height: 381px;
+            img {
+                height: 120px;
+            }
+            
+            hr {
+                margin-top: -13px;
+                margin-bottom: 39px;
+            }
+            &__subtitle {
+                margin-top: 6px;
+                font-size: 13px;
+            }
+            &__footer {
+                flex-direction: column;
+                align-items: center;
+            }
         }
         &-item__price {
             font-size: 16px;
@@ -425,7 +481,11 @@
         &__icons {
             min-width: 100%;
             margin: 0;
+            &_animated {
+                margin-top: 13px;
+            }
         }
+        
         &__text {
             width: 100%;
             font-size: 13px;
