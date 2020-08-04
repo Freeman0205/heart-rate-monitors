@@ -302,7 +302,7 @@
             padding: 2px 2px 2px 4px;
 
             &__list li {
-                font-size: 10px;
+                font-size: 11px;
                 margin-bottom: 0px;
             }
             &__descr {
@@ -319,7 +319,7 @@
                 margin-bottom: 7px;
             }
             &__back {
-                bottom: -10px;
+                bottom: -22px;
             }
                 
         }
@@ -517,6 +517,87 @@
         }
     }
 
+    .catalog {
+
+        padding: 5px 5px 0px 5px;
+            
+            
+        .button_mini {
+            width: 94px;
+            height: 31px;
+        }
+        .container {
+            padding: 0 10px;
+        }
+        &__tabs {
+            margin-top: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        &__tab {
+            width: 184px;
+            font-size: 12px;
+            margin-bottom: 7px;
+        }    
+
+        &__content {
+            margin-top: 12px;
+        }
+
+        &-item {
+            width: 148px;
+            padding: 2px 2px 2px 4px;
+            border-radius: 5px;
+            img {
+                height: 75px;
+            }
+
+            &__list li {
+                font-size: 11px;
+                margin-bottom: 0px;
+            }
+            
+            &__link {
+                margin-top: 36px;
+                position: absolute;
+                margin-left: 20px;
+            }
+            &__price {
+                margin-bottom: 7px;
+                font-size: 24px;
+            }
+            &__old-price {
+                font-size: 17px;
+                text-align: center;
+            }
+            &__back {
+                bottom: -22px;
+            }
+                 
+            &__content_active {
+                margin-right: 10px;
+            }
+           
+            
+            &__subtitle {
+                font-size: 14px;
+                margin-right: 2px;
+            }
+            .catalog-item {
+                
+                &__descr {
+                    margin-right: 0px;
+                    font-size: 13px;
+                    margin-top: 3px;
+                }
+            }
+        }
+        .title {
+            font-size: 19px;
+        }
+
+    }
+
     .feed-form {
         margin-top: 7px;
         input {
@@ -547,37 +628,6 @@
             li {
                 margin-right: 0;
             }
-        }
-    }
-
-    .catalog {
-        .container {
-            padding: 0 17px;
-        }
-        &__tabs {
-            margin-top: 0;
-            display: flex;
-            flex-direction: column;
-        }
-        &__tab {
-            width: 184px;
-            font-size: 12px;
-            margin-bottom: 7px;
-        }
-        &-item {
-            img {
-                height: 100px;
-            }
-            &__descr {
-                font-size: 10px;
-            }
-            &__link {
-                font-size: 12px;
-                margin-top: 7px;
-            }
-        }
-        .title {
-            font-size: 19px;
         }
     }
 
